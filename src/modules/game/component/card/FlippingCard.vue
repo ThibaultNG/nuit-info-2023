@@ -6,7 +6,7 @@
 					<v-img src="/cards/sheep.png" alt="Front Image" class="card-image" />
 				</div>
 				<div class="card-face card-face-back">
-					<v-img src="/cards/train.png" alt="Back Image" class="card-image" />
+					<v-img src="/cards/bank.png" alt="Back Image" class="card-image" />
 				</div>
 			</div>
 			<v-btn
