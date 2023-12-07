@@ -1,9 +1,11 @@
 <template>
 	<v-app>
-		<v-app-bar color="primary-lighten-1" class="pl-10">
-			<v-icon size="x-large">mdi-vuejs</v-icon>
-			<v-app-bar-title class="text-h4">APP NAME</v-app-bar-title>
+		<v-app-bar color="primary-lighten-1">
+			<v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+			<v-app-bar-title class="text-h4">Nuit Info 2023</v-app-bar-title>
 		</v-app-bar>
+
+		<MainNavBar v-model="drawer" />
 
 		<v-main>
 			<div class="main-container">
@@ -11,11 +13,9 @@
 			</div>
 		</v-main>
 
-		<MainNavBar />
-
 		<v-footer app>
 			<div class="text-center w-100">
-				{{ new Date().getFullYear() }} — <strong>COMPANY</strong>
+				{{ new Date().getFullYear() }} — <strong>EPISEN SI ING1 & ING3</strong>
 			</div>
 		</v-footer>
 	</v-app>
@@ -24,6 +24,9 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
 import MainNavBar from "./component/MainNavBar.vue";
+import { ref } from "vue";
+
+const drawer = ref<boolean>(true);
 </script>
 
 <style scoped>
