@@ -8,16 +8,10 @@
 		<MainNavBar v-model="drawer" />
 
 		<v-main>
-			<div class="main-container">
-				<RouterView />
-			</div>
+			<RouterView />
 		</v-main>
 
-		<v-footer app>
-			<div class="text-center w-100">
-				{{ new Date().getFullYear() }} — <strong>EPISEN SI ING1 & ING3</strong>
-			</div>
-		</v-footer>
+		<v-footer color="background"> </v-footer>
 	</v-app>
 </template>
 
@@ -29,12 +23,4 @@ import { ref } from "vue";
 const drawer = ref<boolean>(true);
 </script>
 
-<style scoped>
-.main-container {
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 50px;
-	padding-bottom: 100px;
-	box-sizing: border-box;
-}
-</style>
+<style scoped></style>

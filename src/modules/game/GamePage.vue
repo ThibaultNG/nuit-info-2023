@@ -1,8 +1,8 @@
 <template>
 	<RessourcesBar />
-	<v-container style="display: flex; justify-content: center; align-items: start">
+	<div style="display: flex; justify-content: center; align-items: start">
 		<MainCard />
-	</v-container>
+	</div>
 </template>
 
 <script setup lang="ts">
