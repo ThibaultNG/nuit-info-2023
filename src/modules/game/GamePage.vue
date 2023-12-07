@@ -1,6 +1,5 @@
 <template>
-	<v-container>
-		This is my brand new game
+	<v-container style="display: flex; justify-content: center; align-items: start;">
 		<MainCard />
 	</v-container>
 </template>
