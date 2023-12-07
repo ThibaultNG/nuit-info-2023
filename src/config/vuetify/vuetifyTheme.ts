@@ -5,15 +5,15 @@ import type { ThemeDefinition } from "vuetify";
 export const defaultLightTheme: ThemeDefinition = {
 	dark: false,
 	colors: {
-		background: "#FFFFFF",
-		surface: "#FFFFFF",
-		primary: "#2196F3",
-		secondary: "#B0BEC5",
-		//'secondary-darken-1': '#FFFFFF',
-		error: "#B00020",
-		info: "#2196F3",
-		success: "#4CAF50",
-		warning: "#FB8C00"
+		background: "#f5f2f0",
+		surface: "#ffffff",
+		primary: "#2F64BF",
+		dark: "#2B2E41",
+		secondary: "#aa763c",
+		error: "#bd000c",
+		info: "#409bb5",
+		success: "#05985a",
+		warning: "#fac31e"
 	}
 };
 
