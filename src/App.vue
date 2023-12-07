@@ -1,0 +1,37 @@
+<template>
+	<v-app>
+		<v-app-bar color="primary-lighten-1" class="pl-10">
+			<v-icon size="x-large">mdi-vuejs</v-icon>
+			<v-app-bar-title class="text-h4">APP NAME</v-app-bar-title>
+		</v-app-bar>
+
+		<v-main>
+			<div class="main-container">
+				<RouterView />
+			</div>
+		</v-main>
+
+		<MainNavBar />
+
+		<v-footer app>
+			<div class="text-center w-100">
+				{{ new Date().getFullYear() }} — <strong>COMPANY</strong>
+			</div>
+		</v-footer>
+	</v-app>
+</template>
+
+<script setup lang="ts">
+import { RouterView } from "vue-router";
+import MainNavBar from "./component/MainNavBar.vue";
+</script>
+
+<style scoped>
+.main-container {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+}
+</style>
