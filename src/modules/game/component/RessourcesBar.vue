@@ -1,8 +1,8 @@
 <template>
 	<v-container style="display: flex">
-		<LevelSlider title="Environnement" />
-		<LevelSlider title="Social" />
-		<LevelSlider title="Economie" />
+		<LevelSlider :title="ressources[0]" />
+		<LevelSlider :title="ressources[1]"  />
+		<LevelSlider :title="ressources[2]"  />
 	</v-container>
 </template>
 
