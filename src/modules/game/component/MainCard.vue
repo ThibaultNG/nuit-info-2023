@@ -1,10 +1,6 @@
 <template>
-	<v-card class="bg-dark" style="max-width: 500px">
-		<v-img
-			src="/cards/sheep.png"
-			alt="A sheep"
-			style="width: 100%; height: auto; object-fit: contain"
-		/>
+	<v-card class="bg-dark" style="width: 500px;">
+		<FlippingCard />
 		<v-container style="display: flex; flex-direction: column">
 			<v-btn
 				variant="outlined"
@@ -23,4 +19,6 @@
 	</v-card>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import FlippingCard from "./FlippingCard.vue";
+</script>
