@@ -6,6 +6,6 @@
 </template>
 
 <script setup lang="ts">
-import MainCard from "@/modules/game/component/MainCard.vue";
+import MainCard from "@/modules/game/component/card/MainCard.vue";
 import RessourcesBar from "@/modules/game/component/RessourcesBar.vue";
 </script>
