@@ -5,7 +5,7 @@ export function getCards(): Card[] {
 		{
 			id: 0,
 			name: "Conseiller",
-			event: "Félicitations Messire, vous avez officiellement été élu suprême leader ! Vous disposez de l'intégralité des ressources de la planète, tout le peuple est sous votre contrôle, l'avenir de cette planète dépend de <b>vous</b> et <b>vos</b> décisions",
+			event: "Félicitations Messire, vous avez officiellement été élu suprême leader ! Vous disposez de l'intégralité des ressources de la planète, tout le peuple est sous votre contrôle, l'avenir de cette planète dépend de vous et vos décisions",
 			left: {
 				answer: "Euhhh...",
 				social: 0,
@@ -22,7 +22,7 @@ export function getCards(): Card[] {
 		{
 			id: 1,
 			name: "sheep",
-			event: "Des propositions arriveront sur votre bureau et ce sera à <b>vous</b> de prendre la décision optimale. Pour ce faire, vous pourrez glisser la proposition vers la gauche ou vers la droite en pour voir les choix qui s'offrent à vous.",
+			event: "Des propositions arriveront sur votre bureau et ce sera à vous de prendre la décision optimale. Pour ce faire, vous pourrez glisser la proposition vers la gauche ou vers la droite en pour voir les choix qui s'offrent à vous.",
 			left: {
 				answer: "Ok...",
 				social: 0,

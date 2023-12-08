@@ -1,12 +1,12 @@
 <template>
 	<v-card class="bg-dark" style="width: 500px">
-		<v-card-text>
-			{{ card.event }}
-		</v-card-text>
+		<v-container class="text-h6">
+            {{ card.event }}
+        </v-container>
 		<CardImage :name="card.name" />
 		<v-container style="display: flex; flex-direction: column">
 			<ChoiceButton
-                class="mb-2"
+				class="mb-2"
 				:choice-text="card.left.answer"
 				:description="card.left.description"
 				@click="handleClick"
@@ -39,10 +39,10 @@ import { computed, ref } from "vue";
 
 const dialog = ref<boolean>(false);
 const gameStore = useGameStore();
-const card = computed(()=>gameStore.currentCard)
+const card = computed(() => gameStore.currentCard);
 
 function handleClick() {
-    if (card.value.alert) dialog.value = true;
+	if (card.value.alert) dialog.value = true;
 	gameStore.updateCard();
 }
 </script>
