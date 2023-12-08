@@ -3,7 +3,7 @@
 		<v-card-text>
 			{{ gameStore.currentCard.event }}
 		</v-card-text>
-		<SingleCard :name="gameStore.currentCard.name" />
+		<CardImage :name="gameStore.currentCard.name" />
 		<v-container style="display: flex; flex-direction: column">
 			<ChoiceButton
 				:choice-text="gameStore.currentCard.left.answer"
@@ -21,7 +21,7 @@
 <script setup lang="ts">
 import { useGameStore } from "../../store/gameStore";
 import ChoiceButton from "../ChoiceButton.vue";
-import SingleCard from "./SingleCard.vue";
+import CardImage from "./CardImage.vue";
 
 const gameStore = useGameStore();
 </script>
