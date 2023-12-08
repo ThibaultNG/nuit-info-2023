@@ -1,10 +1,10 @@
 <template>
-	<div style="display: flex; align-items: center;">
+	<div style="display: flex; align-items: center">
 		<v-btn
 			variant="outlined"
 			:text="choiceText"
-            style="flex-grow: 100; margin-right: 10px;"
-			@click="console.log('Droite')"
+			style="flex-grow: 100; margin-right: 10px"
+			@click="emit('click')"
 		></v-btn>
 		<v-btn variant="text" color="info" icon="mdi-help-circle" @click="dialog = true" />
 		<v-dialog v-model="dialog" transition="dialog-top-transition" width="auto">
@@ -28,6 +28,10 @@ const dialog = ref<boolean>(false);
 
 const prop = defineProps<{
 	choiceText: string;
-	description: string;
+	description?: string;
+}>();
+
+const emit = defineEmits<{
+	(e: "click"): void;
 }>();
 </script>
