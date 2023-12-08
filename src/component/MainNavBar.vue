@@ -37,24 +37,11 @@ import { useTheme } from "vuetify";
 import { ref } from "vue";
 import { headerThemeList } from "../config/vuetify/vuetifyThemeHeader";
 
-const emits = defineEmits<{
+defineEmits<{
 	(e: "update:modelValue", value: boolean): void;
-	(e: "clicked", value: boolean): void;
 }>();
 
-const props = defineProps<{
-	id: {
-		type: String;
-		default: "";
-	};
-	displayedName: {
-		type: String;
-		default: "";
-	};
-	icon: {
-		type: String;
-		default: "";
-	};
+defineProps<{
 	modelValue: boolean;
 }>();
 

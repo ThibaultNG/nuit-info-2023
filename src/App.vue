@@ -1,6 +1,6 @@
 <template>
 	<v-app>
-		<v-app-bar color="primary-lighten-1">
+		<v-app-bar color="primary-lighten-1" scroll-behavior="hide">
 			<v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 			<v-app-bar-title class="text-h4">Nuit Info 2023</v-app-bar-title>
 		</v-app-bar>

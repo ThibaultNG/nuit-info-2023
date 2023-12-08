@@ -9,14 +9,14 @@ export const useGameStore = defineStore("game", () => {
 	const ecology = ref<number>(50);
 	const social = ref<number>(50);
 	const cards = ref<Card[]>([]);
-	const currentCard = ref<Card>(cards.value[0]);
+	const currentCard = ref<Card>();
 	const bundle = ref<Bundle>();
 	const currentId = ref<number>(-1);
 
 	getBundles()
 		.then((res) => (bundle.value = res))
 		.then(() => console.log(bundle.value))
-		.then(() => (cards.value = bundle.value!["tutoriel"]))
+		.then(() => (cards.value = bundle.value!["tutorial"]))
 		.then(() => updateCard());
 
 	function updateCard(): void {
