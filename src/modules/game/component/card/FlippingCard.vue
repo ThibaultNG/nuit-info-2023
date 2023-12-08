@@ -3,7 +3,7 @@
 		<div class="card-container">
 			<div class="card" :class="{ 'is-flipped': isFlipped }">
 				<div class="card-face card-face-front">
-					<v-img src="/cards/sheep.png" alt="Front Image" class="card-image" />
+					<v-img src="/cards/teacher.png" alt="Front Image" class="card-image" />
 				</div>
 				<div class="card-face card-face-back">
 					<v-img src="/cards/bank.png" alt="Back Image" class="card-image" />
