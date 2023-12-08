@@ -1,0 +1,49 @@
+id;bundle;name;event;alert;answerLeft;addBundleLeft;socialLeft;ecologyLeft;economyLeft;anwserRight;addBundleRight;socialRight;ecologyRight;economyRight
+0;tutorial;Conseiller;Félicitations Messire, vous avez officiellement été élu suprême leader ! Vous disposez de l’intégralité des ressources de la planète, tout le peuple est sous votre contrôle, l’avenir de cette planète dépend de vous et vos décisions.;;Euhhh...;;0;0;0;D’accord.;;0;0;0
+1;tutorial;Conseiller;Des propositions arriveront sur votre bureau et ce sera à vous de prendre la décision optimale. Pour ce faire, vous pourrez glisser la proposition vers la gauche ou vers la droite en pour voir les choix qui s’offrent à vous.;;Ok...;;0;0;0;J'ai compris.;;0;0;0
+2;tutorial;Conseiller;De plus, il est possible de retourner la carte pour obtenir des informations supplémentaires.;Bon j’ai rien à dire de plus mais ça illustre bien.;Thanks Captain Obvious....;;0;0;0;Ça marche !;;0;0;0
+3;tutorial;Conseiller;Avant de prendre votre décision, vous pourrez apercevoir les impacts liés à la décision que vous allez prendre.  Tant que vous n’aurez pas relâché la proposition, vous serez libre de changer d’avis.;Éviter de faire tout péter dès le début.;Entendu (attend mais c’est les mêmes choix ici);;0;0;0;Entendu;;0;0;0
+4;tutorial;Conseiller;Faites de bons choix, l’avenir de la planète en dépend, on compte sur vous pour un meilleur lendemain. Vous sentez vous à la hauteur pour accomplir votre mission ?;;J’ai jamais signé pour ça;ending_abandon;0;0;0;Commençons !;explications;0;0;0
+5;ending_abandon;Conseiller;Quoi ?! Vous abandonnez avant même d'avoir commencé ? Mais si tout le monde agissait comme vous, on courrerait à notre perte !;Succès débloqué : C'est pas ma guerre!;Fin;;0;0;0;Fin;;0;0;0
+6;tutorial;Conseiller;Parfait, à présent laissez moi vous parlez des principaux facteurs affectant la planète : les 3 piliers du développement durable.;;Ok;;0;0;0;Ok;;0;0;0
+7;tutorial;Conseiller;Le premier pilier, l'économie englobe la richesse de la planète ainsi que la cohésion militaire, les avancées technologiques et la gestion des ressources et de l’énergie.;;D'accord;;0;0;0;D'accord;;0;0;0
+8;tutorial;Conseiller;L’écologie, le deuxième pillier, est centrée sur l’état et la qualité de l’eau, des sols, de la biodiversité et de l’air.;;Très bien;;0;0;0;Très bien;;0;0;0
+9;tutorial;Conseiller;Enfin, le pilier social reflète l’état de l’opinion publique, de la santé mondiale, du niveau d’éducation et de la stabilité politique.;;Entendu;;0;0;0;Entendu;;0;0;0
+10;tutorial;Conseiller;Si vous maintenant ces 3 piliers dans un bon état, ni trop faible, ni trop élevé, vous permettrez à l’humanité de vivre dans une société durable.;;Nickel;;0;0;0;Nickel;;0;0;0
+11;tutorial;Conseiller;Vous avez bien tout en tête ? Bon eh bien à vous de jouer !;J'espère vraiment que vous avez tout retenu...;Bien sûr !;general;0;0;0;C'est parti !;general;0;0;0
+12;general;Agriculteur;Messire, la faim se répend, peut-on consacrer plus de terres a l'élevage des bovins ?;;Me-euh-rveilleuse idée !;;3;-3;1;idée de me-euh-rde !;;-3;1;0
+13;general;Chercheur;Il me faudrait plus de moyens pour financer mes recherches. ;;Vas-y Einstein !;;1;0;-3;Retourne disséquer des souris.;;-1;0;1
+14;general;Zoologiste;Le Tigre du Bengale est une espèce en voie de disparition, nous devrions déployer des moyens pour la protéger !;Dû a la chasse illégale, seuls 4500 spécimens sont en vies en 2023. Source : myanimals.com;Sauvez ces tigres !;;3;3;-5;J'ai besoin d'un manteau de fourrure en fait.;;-3;-5;1
+15;general;Zoologiste;L'Ours Polaire est une espèce en voie de disparition, nous devrions déployer des moyens pour la protéger !;Dû au réchauffement climatique, seuls 30000 spécimens sont en vies en 2023 au Canada. Source : myanimals.com;Sauvez les !;;3;3;-5;Il y a assez d'ours dans l'espace. (constellations);;-3;-5;1
+16;general;Ingénieur;Nous planifions la construction d'un aqueduc près d'une ville désertique.;;Bonne idée !;;3;-3;-5;Un aque-quoi ?;;-1;3;1
+17;general ;Ingénieur;Créons un site pour récolter le pétrole souterrain.;;A moi la moulaga !;;-1;-3;5;Evitons de défertiliser nos sols.;;1;5;-1
+18;general;Militaire;Nous avons localiser un OVNI proche de notre planète, éliminons le !;;Zigouillez ces aliens !;star_wars;-1;-3;-5;Evitons les conflits.;;3;1;1
+19;general;Banquier;Nous avons besoin de matières pour créer des pièces de monnaie...;;Bien sûr !;;3;-3;3;Casse ta tirelire !;;-1;3;-1
+20;general;Astronaute;Allons sur la Lune...;;Visez la Lune, cela me fait pas peur...;;3;-5;-5;Trop de sacrifices...;;-1;3;1
+21;general;Enseignant;Nous avons besoin d'outils plus performants pour éduquer...;;Ok;;5;-1;-3;9+10=21 ?;;-3;1;1
+22;star_wars;Militaire;L'OVNI abattu s'avère être un vaisseau métallique de type Chasseur TIE selon la notice présente sur lui.;;Profitons de cette technologie extraterrestre !;;5;-3;-5;Uh-Oh !;;-1;3;3
+23;star_wars;Extraterrestre;Vous osez vous attaquer a notre espèce ! Bientôt vous subirez la fureur des étoiles !;;Même pas peur !;;3;-5;3;...;;-3;0;-5
+24;star_wars;Militaire;Préparons nous a affronter les extraterrestres !;;Soldats, a vos bataillons !;;0;0;0;Maman a l'aide !;;0;0;0
+25;star_wars;Militaire;Messire, un étrange vaisseau sphérique gris a été repéré proche de notre planète, il pointe son canon droit sur nous...;Succès débloqué : Etoile de la Mort !;AH !;;-5;0;-5;Confiner tout le monde et préparer la contre-offensive;;3;-5;-10
+26;general;Ingénieur;Il est l'heure d'investir dans le nucléaire, construisons des centrales !;;Allons-y !;atomic;0;-3;10;Je passe...;;0;0;0
+27;atomic;Ingénieur;Devrions nous jeter les déchets nucléaires dans le fleuve ?;;Les déchets a l'eau !;;-5;-10;0;Il existe d'autres solutions;;3;-3;-10
+28;atomic;Ingénieur;L'énergie nucléaire est remarquable, mais il est possible que...;Succès débloqué :Tchernobyl;C'est quoi ce champignon ?;;-40;-50;-30;Et ça fait bim-bam-boom ?;;-40;-50;-30
+29;atomic;Ingénieur;Air... Eau... Animaux... Radio...acti...vité...;Succès débloqué : RADIOACTIVE;Rudolph ?;;-10;-20;-10;Ça brille de partout !;;-10;-20;-10
+30;general ;Politicien;Le prix de l'essence augmente, devrions nous le réguler ?;;Oui bien sûr !;;5;-5;-5;Non, ca reste rare !;rebellion;-5;5;0
+31;rebellion;Militaire;Des habitants vêtus de gilets jaunes commencent a bloquer des routes !;;Confrontez-les !;;-10;0;5;Ecoutez-les !;green_talk;5;0;-5
+32;rebellion;Politicien;Le mouvement rebelle a pris trop d'ampleur, vous êtes destitué de vos fonctions !;Succès débloqué : Patron ! Démission !;C'est déjà la retraite ?;;20;0;-20;Allons retrouver papy;;20;0;-20
+33;general;Zoologiste;Un incendie vient de se déclencher dans une forêt !;;Eteignez-le !;;0;2;-5;Il faut libérer de la place pour mon nouveau manoir !;;0;-7;2
+34;general;Politicien;Une nouvelle ligne de chemin de fer doit être construite.;;Bonne idée !;;5;-2;-3;Je refuse !;;-5;0;0
+35;general ;Astronaute;On a besoin de nouveaux téléscopes pour observer les astres.;;Ok;;1;0;-5;T'as pas des deja des yeux ?;;-1;0;0
+36;general;Zoologiste;Un essaim d'abeilles attaque les habitants.;;Sortez les pesticides !;;0;-3;0;C'est que des piqûres d'abeilles !;;-3;0;0
+37;general;Ingénieur;On souhaite construire de nouvelles usines de pantalons.;;Cool !;;0;-3;1;J'préfère les survêt';;0;0;0
+38;general;Agriculteur;Des champs de blé sont a mettre en place.;;D'accord.;;0;3;-1;Non, je préfère  l'artificiel;;0;0;0
+39;general ;Chercheur;La production d'aérosols est a intensifier.;;Mais oui c'est clair !;;0;-3;0;Non, en fait;ozone;0;-3;0
+39 ;ozone;Chercheur;"On émet beacoup moins de gaz a effets de serre fluorés; la couche d'ozone peut se reformer !";Succès débloqué : Rayons UV-C, you shall not pass !;Au revoir les rayons cancérigènes !;;5;10;0;On peut de nouveau polluer ?;;-5;-15;5
+40;general;Zoologiste;Faut-il instaurer une taxe carbone ?;;Oui !;;0;5;-5;Non, ce n'est pas important !;carbon;0;-5;5
+41;carbon;Zoologiste ;A cause du CO2 accumulé dans l'atmosphère, les océans s'acidifient causant la mort des coraux et des poissons.;Succès débloqué : L'acide ca pique !;Ca ronge les os !;;-10;-15;-5;Je sens plus mes jambes !;;-10;-15;-5
+42;carbon;Chercheur;L'effet de serre est accéléré, les sols se réchauffent du a l'amplification du rayonnement solaire.;Succès débloqué : The floor is lava !;Ça brûle !!!!;;-10;-15;-5;Je sens plus mes orteils !;;-10;-15;-5
+43;carbon;Chercheur;La fonte des banquises et des icebergs a cause de la chaleur mène a la montée des eaux...;Succès débloqué : Atlantis !;Titanic !;;-10;-15;-5;Je sais pas nager moi !;;-10;-15;-5
+44;carbon;Chercheur;Le réchauffement climatique s'est amplifiée, la température moyenne de la planète augmente drastiquement.;Succès débloqué : Aux fourneaux !;Barbeuc party!;;-10;-15;-5;J'ai mon stock de crème solaire;;-10;-15;-5
+45;general ;Zoologiste;Des insectes malades piquent des habitants.;;Sortez les pesticides !;;5;-2;-5;C'est que des petites bestioles !;vector;-5;2;0
+46;vector;Zoologiste;Le paludisme et d'autres maladies se sont grandement répandues ces derniers temps a cause des insectes agissant comme des vecteurs de maladie.;Succès débloqué : Piqûres douloureuses.;Donnes-moi ta tongue;;-10;-15;-5;Y'a que les femelles qui pîques;;-10;-15;-5
