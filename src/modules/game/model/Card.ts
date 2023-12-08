@@ -1,6 +1,7 @@
 export interface Choice {
 	answer: string;
 	description: string;
+	alert?: string;
 	social: number;
 	economy: number;
 	ecology: number;
@@ -8,8 +9,12 @@ export interface Choice {
 
 export interface Card {
 	id: number;
-	path: string;
-	characterName: string;
+	name: string;
+	flipName?: string;
 	left: Choice;
 	right: Choice;
+}
+
+export interface Bundle {
+	cards: Card[];
 }
