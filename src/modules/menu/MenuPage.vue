@@ -13,8 +13,18 @@
 				height: 100%;
 			"
 		>
-			<v-btn class="card-btn" color="primary" text="Tutoriel" />
-			<v-btn class="card-btn" color="secondary" text="Nouvelle Partie" />
+			<v-btn
+				class="card-btn"
+				color="primary"
+				text="Tutoriel"
+				@click="() => startGame('tutorial')"
+			/>
+			<v-btn
+				class="card-btn"
+				color="secondary"
+				text="Nouvelle Partie"
+				@click="() => startGame('general')"
+			/>
 			<v-btn class="card-btn" color="secondary" text="Succès" />
 			<ChangeTheme />
 		</div>
@@ -23,6 +33,18 @@
 
 <script setup lang="ts">
 import ChangeTheme from "@/component/ChangeTheme.vue";
+import { useGameStore } from "../game/store/gameStore";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const gameStore = useGameStore();
+
+function startGame(bundleName: string) {
+	gameStore.initGame(bundleName);
+    console.log(gameStore.cards)
+	router.push({ path: "/game" });
+}
 </script>
 
 <style scoped>
