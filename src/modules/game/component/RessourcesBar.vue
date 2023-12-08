@@ -1,8 +1,8 @@
 <template>
 	<div style="display: flex" class="mb-2 mt-10">
-		<LevelSlider :title="ressources[0]" :value="gameStore.ecology" />
-		<LevelSlider :title="ressources[1]" :value="gameStore.social"/>
-		<LevelSlider :title="ressources[2]" :value="gameStore.economy"/>
+		<LevelSlider :title="ressources[0]" :val="gameStore.ecology" />
+		<LevelSlider :title="ressources[1]" :val="gameStore.social"/>
+		<LevelSlider :title="ressources[2]" :val="gameStore.economy"/>
 	</div>
 </template>
 

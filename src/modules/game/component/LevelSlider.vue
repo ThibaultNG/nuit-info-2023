@@ -1,6 +1,6 @@
 <template>
 	<v-slider
-		model-value="value"
+		:model-value="val"
 		:color="color"
 		:label="title"
 		density="compact"
@@ -16,12 +16,12 @@ import { computed } from "vue";
 
 const props = defineProps<{
 	title: string;
-	value: number;
+	val: number;
 }>();
 
 const color = computed(() => {
-	if (props.value < 30) return "red";
-	else if (props.value < 60) return "orange";
+	if (props.val < 30) return "red";
+	else if (props.val < 60) return "orange";
 	return "green";
 });
 </script>

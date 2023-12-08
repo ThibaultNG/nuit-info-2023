@@ -15,7 +15,7 @@
 		</v-container>
 	</v-card>
 	<div v-else>
-		<v-btn title="Erreur: retourner à l'Accueil" to="/home" />
+		<v-btn text="Erreur: retourner à l'Accueil" to="/home" />
 	</div>
 
 	<v-snackbar v-model="snackbar" timeout="3000" color="success">
@@ -44,6 +44,7 @@ function handleRightClick() {
 	if (gameStore.currentCard!.alert) snackbar.value = true;
 	gameStore.nextCard();
 }
+
 function handleLeftClick() {
 	gameStore.ecology += card.value!.left.ecology;
 	gameStore.social += card.value!.left.social;
