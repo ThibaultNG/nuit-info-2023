@@ -1,26 +1,21 @@
 <template>
-	<v-app>
-		<v-app-bar color="primary-lighten-1" scroll-behavior="hide">
-			<v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-			<v-app-bar-title class="text-h4">Nuit Info 2023</v-app-bar-title>
-		</v-app-bar>
-
-		<MainNavBar v-model="drawer" />
-
-		<v-main>
+	<div style="display: flex; justify-content: center; align-items: start">
+		<div
+			class="bg-background"
+			style="
+				position: absolute;
+				opacity: 0.5;
+				min-height: 100vh;
+				min-width: 600px;
+				max-width: 100vh;
+			"
+		></div>
+		<div style="height: 100vh; min-width: 600px; max-width: 100vh">
 			<RouterView />
-		</v-main>
-
-		<v-footer color="background"> </v-footer>
-	</v-app>
+		</div>
+	</div>
 </template>
 
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import MainNavBar from "./component/MainNavBar.vue";
-import { ref } from "vue";
-
-const drawer = ref<boolean>(true);
 </script>
-
-<style scoped></style>

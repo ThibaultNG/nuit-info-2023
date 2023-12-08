@@ -4,13 +4,13 @@ const routes: RouteRecordRaw[] = [
 	{
 		path: "/home",
 		name: "Home",
-		component: () => import("@/views/HomePage.vue")
+		component: () => import("@/modules/menu/MenuPage.vue")
 	},
 	{
 		path: "/game",
 		name: "Game",
 		component: () => import("@/modules/game/GamePage.vue")
-	}
+	},    
 ];
 
 export default routes;

@@ -5,7 +5,7 @@ import type { ThemeDefinition } from "vuetify";
 export const defaultLightTheme: ThemeDefinition = {
 	dark: false,
 	colors: {
-		background: "#F9F6EE",
+		background: "#ffb152",
 		surface: "#FAF9F6",
 		primary: "#1c2342"
 	}
