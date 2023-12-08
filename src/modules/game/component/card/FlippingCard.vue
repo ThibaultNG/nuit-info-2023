@@ -11,7 +11,7 @@
 			</div>
 			<v-btn
 				variant="elevated"
-                color="info"
+				color="info"
 				icon="mdi-refresh"
 				style="position: absolute; bottom: 0px; right: 0px"
 				@click="flipCard"
