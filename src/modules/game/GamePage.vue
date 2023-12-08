@@ -39,6 +39,8 @@ function handleRightClick() {
 	gameStore.social += card.value!.right.social;
 	gameStore.economy += card.value!.right.economy;
 
+	if (card.value?.right.addBundle) gameStore.addBundle(card.value?.right.addBundle);
+
 	if (gameStore.currentCard!.alert) snackbar.value = true;
 	gameStore.nextCard();
 }
@@ -46,6 +48,8 @@ function handleLeftClick() {
 	gameStore.ecology += card.value!.left.ecology;
 	gameStore.social += card.value!.left.social;
 	gameStore.economy += card.value!.left.economy;
+
+	if (card.value?.left.addBundle) gameStore.addBundle(card.value?.left.addBundle);
 
 	if (gameStore.currentCard!.alert) snackbar.value = true;
 	gameStore.nextCard();
