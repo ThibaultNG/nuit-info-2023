@@ -1,16 +1,13 @@
 <template>
 	<v-card
-		style="
-			min-height: 100vh;
-			max-width: 600px;
-			background-color: rgba(0, 0, 0, 0);
-		"
+		v-if="card"
+		style="min-height: 100vh; max-width: 450px; background-color: rgba(0, 0, 0, 0)"
 	>
-		<!-- <RessourcesBar /> -->
+		<RessourcesBar />
 
-		<v-container>
+		<div class="mx-5 mb-2">
 			{{ card.event }}
-		</v-container>
+		</div>
 		<CardImage :name="card.name" />
 		<v-container style="display: flex; flex-direction: column">
 			<ChoiceButton class="mb-2" :choice-text="card.left.answer" @click="handleClick" />
@@ -32,7 +29,7 @@ import RessourcesBar from "@/modules/game/component/RessourcesBar.vue";
 
 const snackbar = ref<boolean>(false);
 const gameStore = useGameStore();
-const card = computed(() => gameStore.currentCard!);
+const card = computed(() => gameStore.currentCard);
 
 function handleClick() {
 	if (gameStore.currentCard!.alert) snackbar.value = true;

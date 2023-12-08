@@ -6,11 +6,11 @@
 				position: absolute;
 				opacity: 0.5;
 				min-height: 100vh;
-				min-width: 600px;
+				min-width: 450px;
 				max-width: 100vh;
 			"
 		></div>
-		<div style="height: 100vh; min-width: 600px; max-width: 100vh">
+		<div style="height: 100vh; min-width: 450px; max-width: 100vh">
 			<RouterView />
 		</div>
 	</div>

@@ -1,14 +1,13 @@
 <template>
-	<v-container style="display: flex">
+	<div style="display: flex" class="mb-2 mt-10">
 		<LevelSlider :title="ressources[0]" />
-		<LevelSlider :title="ressources[1]"  />
-		<LevelSlider :title="ressources[2]"  />
-	</v-container>
+		<LevelSlider :title="ressources[1]" />
+		<LevelSlider :title="ressources[2]" />
+	</div>
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from "vue";
 import LevelSlider from "./LevelSlider.vue";
 
-const ressources = ["Environnement", "Social", "Economique"];
+const ressources = ["ENV", "SOC", "ECO"];
 </script>
