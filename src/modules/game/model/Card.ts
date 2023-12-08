@@ -1,9 +1,9 @@
 export interface Choice {
 	answer: string;
-	description?: string;
+    addBundle?: string;
 	social: number;
-	economy: number;
 	ecology: number;
+	economy: number;
 }
 
 export interface Card {
