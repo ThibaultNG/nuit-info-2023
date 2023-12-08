@@ -1,17 +1,41 @@
 <template>
-	<RessourcesBar />
-	<div
-		v-if="gameStore.currentCard"
-		style="display: flex; justify-content: center; align-items: start"
+	<v-card
+		style="
+			min-height: 100vh;
+			max-width: 600px;
+			background-color: rgba(0, 0, 0, 0);
+		"
 	>
-		<MainCard />
-	</div>
+		<!-- <RessourcesBar /> -->
+
+		<v-container>
+			{{ card.event }}
+		</v-container>
+		<CardImage :name="card.name" />
+		<v-container style="display: flex; flex-direction: column">
+			<ChoiceButton class="mb-2" :choice-text="card.left.answer" @click="handleClick" />
+			<ChoiceButton :choice-text="card.right.answer" @click="handleClick" />
+		</v-container>
+	</v-card>
+
+	<v-snackbar v-model="snackbar" timeout="3000" color="success">
+		{{ gameStore.currentCard?.alert }}
+	</v-snackbar>
 </template>
 
 <script setup lang="ts">
-import MainCard from "@/modules/game/component/card/MainCard.vue";
+import { useGameStore } from "@/modules/game/store/gameStore";
+import ChoiceButton from "@/modules/game/component/ChoiceButton.vue";
+import CardImage from "@/modules/game/component/card/CardImage.vue";
+import { computed, ref } from "vue";
 import RessourcesBar from "@/modules/game/component/RessourcesBar.vue";
-import { useGameStore } from "./store/gameStore";
 
+const snackbar = ref<boolean>(false);
 const gameStore = useGameStore();
+const card = computed(() => gameStore.currentCard!);
+
+function handleClick() {
+	if (gameStore.currentCard!.alert) snackbar.value = true;
+	gameStore.nextCard();
+}
 </script>
