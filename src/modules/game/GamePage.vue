@@ -14,6 +14,9 @@
 			<ChoiceButton :choice-text="card.right.answer" @click="handleClick" />
 		</v-container>
 	</v-card>
+    <div v-else>
+        <v-btn title="Erreur: retourner à l'Accueil" to="/home"/>
+    </div>
 
 	<v-snackbar v-model="snackbar" timeout="3000" color="success">
 		{{ gameStore.currentCard?.alert }}

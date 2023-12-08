@@ -17,13 +17,16 @@ export const useGameStore = defineStore("game", () => {
 	getBundles().then((res) => (bundle.value = res));
 
 	function initGame(bundleName: string): void {
-		cards.value = bundle.value![bundleName];
-		nextCard();
+		cards.value = [...bundle.value![bundleName]];
+		currentCard.value = cards.value.shift();
+		economy.value = 50;
+		social.value = 50;
+		ecology.value = 50;
 	}
 
 	function addBundle(name: string): void {
 		if (bundle.value && bundle.value[name]) {
-			cards.value.push(...bundle.value[name]);
+			cards.value.push(...[...bundle.value[name]]);
 			cards.value = shuffleArray(cards.value);
 		}
 	}
