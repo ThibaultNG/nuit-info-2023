@@ -10,13 +10,13 @@
 		</div>
 		<CardImage :name="card.name" />
 		<v-container style="display: flex; flex-direction: column">
-			<ChoiceButton class="mb-2" :choice-text="card.left.answer" @click="handleClick" />
-			<ChoiceButton :choice-text="card.right.answer" @click="handleClick" />
+			<ChoiceButton class="mb-2" :choice-text="card.left.answer" @click="handleLeftClick" />
+			<ChoiceButton :choice-text="card.right.answer" @click="handleRightClick" />
 		</v-container>
 	</v-card>
-    <div v-else>
-        <v-btn title="Erreur: retourner à l'Accueil" to="/home"/>
-    </div>
+	<div v-else>
+		<v-btn title="Erreur: retourner à l'Accueil" to="/home" />
+	</div>
 
 	<v-snackbar v-model="snackbar" timeout="3000" color="success">
 		{{ gameStore.currentCard?.alert }}
@@ -34,7 +34,19 @@ const snackbar = ref<boolean>(false);
 const gameStore = useGameStore();
 const card = computed(() => gameStore.currentCard);
 
-function handleClick() {
+function handleRightClick() {
+	gameStore.ecology += card.value!.right.ecology;
+	gameStore.social += card.value!.right.social;
+	gameStore.economy += card.value!.right.economy;
+
+	if (gameStore.currentCard!.alert) snackbar.value = true;
+	gameStore.nextCard();
+}
+function handleLeftClick() {
+	gameStore.ecology += card.value!.left.ecology;
+	gameStore.social += card.value!.left.social;
+	gameStore.economy += card.value!.left.economy;
+
 	if (gameStore.currentCard!.alert) snackbar.value = true;
 	gameStore.nextCard();
 }
