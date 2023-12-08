@@ -40,7 +40,7 @@ export function getCards(): Card[] {
 			id: 2,
 			name: "teacher",
 			event: "De plus, il est possible de retourner la carte pour obtenir des informations supplémentaires.",
-			alert: "Bon j’ai rien à dire de plus mais ça illustre bien.",
+			alert: "Bon j'ai rien à dire de plus mais ça illustre bien.",
 			left: {
 				answer: "Thanks Captain Obvious....",
 				social: 0,
