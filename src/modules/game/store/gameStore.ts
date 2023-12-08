@@ -3,6 +3,7 @@ import { ref } from "vue";
 import type { Card } from "../model/Card";
 import type { Bundle } from "../model/Card";
 import { getBundles } from "../service/cardLoader";
+import { useRouter } from "vue-router";
 
 export const useGameStore = defineStore("game", () => {
 	const economy = ref<number>(50);
@@ -11,11 +12,13 @@ export const useGameStore = defineStore("game", () => {
 	const cards = ref<Card[]>([]);
 	const currentCard = ref<Card>();
 	const bundle = ref<Bundle>();
+	const router = useRouter();
 
 	getBundles().then((res) => (bundle.value = res));
 
-	function initTutorial(): void {
-		cards.value = bundle.value!["tutorial"];
+	function initGame(bundleName: string): void {
+		cards.value = bundle.value![bundleName];
+		nextCard();
 	}
 
 	function addBundle(name: string): void {
@@ -26,10 +29,11 @@ export const useGameStore = defineStore("game", () => {
 	}
 
 	function nextCard(): void {
-		currentCard.value = cards.value.pop();
+		currentCard.value = cards.value.shift();
+		if (!currentCard.value) router.push({ path: "/home" });
 	}
 
-	return { ecology, economy, social, cards, currentCard, nextCard, initTutorial, addBundle };
+	return { ecology, economy, social, cards, currentCard, nextCard, initGame, addBundle };
 });
 
 /* Randomize array in-place using Durstenfeld shuffle algorithm */

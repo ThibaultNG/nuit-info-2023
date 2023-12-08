@@ -36,6 +36,6 @@ const card = computed(() => gameStore.currentCard);
 
 function handleClick() {
 	if (gameStore.currentCard?.alert) dialog.value = true;
-	gameStore.updateCard();
+	gameStore.nextCard();
 }
 </script>
