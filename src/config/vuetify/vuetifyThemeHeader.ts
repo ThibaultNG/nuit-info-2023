@@ -6,17 +6,17 @@ export interface headerThemeItem {
 export const headerThemeList: headerThemeItem[] = [
 	{
 		id: "defaultLightTheme",
-		displayedName: "light",
+		displayedName: "Light",
 		icon: "mdi-white-balance-sunny"
 	},
 	{
 		id: "defaultDarkTheme",
-		displayedName: "dark",
+		displayedName: "Dark",
 		icon: "mdi-moon-waxing-crescent"
 	},
 	{
-		id: "wineTheme",
-		displayedName: "wine",
-		icon: "mdi-glass-wine"
+		id: "xmasTheme",
+		displayedName: "Xmas",
+		icon: "mdi-candycane"
 	}
 ];
