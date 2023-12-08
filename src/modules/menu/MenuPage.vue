@@ -4,7 +4,7 @@
 			Earth President
 		</v-card-title>
 
-		<v-card-action
+		<div
 			style="
 				display: flex;
 				flex-direction: column;
@@ -13,15 +13,17 @@
 				height: 100%;
 			"
 		>
-			<v-btn class="card-btn" color="primary" text="Nouvelle Partie" />
-			<v-btn class="card-btn" color="secondary" text="Tutoriel" />
-			<v-btn class="card-btn" color="info" text="Succès" />
-			<v-btn class="card-btn" color="info" text="Thème" />
-		</v-card-action>
+			<v-btn class="card-btn" color="primary" text="Tutoriel" />
+			<v-btn class="card-btn" color="secondary" text="Nouvelle Partie" />
+			<v-btn class="card-btn" color="secondary" text="Succès" />
+			<ChangeTheme />
+		</div>
 	</v-card>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ChangeTheme from "@/component/ChangeTheme.vue";
+</script>
 
 <style scoped>
 .card-btn {

@@ -1,5 +1,6 @@
 <template>
-	<v-btn :prepend-icon="icon" :text="displayedName" variant="text" @click="clicked" />
+	<v-list-item :prepend-icon="icon" :title="displayedName" variant="text" @click="clicked">
+	</v-list-item>
 </template>
 
 <script setup lang="ts">
