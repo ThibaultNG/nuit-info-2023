@@ -17,5 +17,6 @@ export interface Card {
 }
 
 export interface Bundle {
+	name: string;
 	cards: Card[];
 }
