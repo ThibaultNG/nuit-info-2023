@@ -1,32 +1,27 @@
 <template>
 	<v-slider
-		v-model="level"
+		model-value="value"
 		:color="color"
 		:label="title"
 		density="compact"
 		readonly
 		thumb-label="always"
-        hide-details
+		hide-details
 		style="{ width: 200px, height: 30px }"
 	/>
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { computed } from "vue";
 
-const { props } = defineProps<{
+const props = defineProps<{
 	title: string;
+	value: number;
 }>();
 
-const level = ref(50);
-
-const setLevel = (new_level: number): void => {
-	level.value = new_level;
-};
-
 const color = computed(() => {
-	if (level.value < 30) return "red";
-	else if (level.value < 60) return "orange";
+	if (props.value < 30) return "red";
+	else if (props.value < 60) return "orange";
 	return "green";
 });
 </script>
