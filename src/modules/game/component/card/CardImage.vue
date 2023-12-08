@@ -1,12 +1,19 @@
 <template>
-	<div class="container">
+	<v-img
+		v-if="!secondName"
+		:src="path"
+		:alt="name"
+		style="width: 100%; height: auto; object-fit: contain"
+	/>
+
+	<div v-else class="container">
 		<div class="card-container">
 			<div class="card" :class="{ 'is-flipped': isFlipped }">
 				<div class="card-face card-face-front">
-					<v-img src="/cards/teacher.png" alt="Front Image" class="card-image" />
+					<v-img :src="path" :alt="name" class="card-image" />
 				</div>
 				<div class="card-face card-face-back">
-					<v-img src="/cards/bank.png" alt="Back Image" class="card-image" />
+					<v-img :src="secondPath" :alt="secondName" class="card-image" />
 				</div>
 			</div>
 			<v-btn
@@ -22,6 +29,20 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { computed } from "vue";
+
+const props = defineProps<{
+	name: string;
+	secondName?: string;
+}>();
+
+const path = computed(() => {
+	return "/cards/" + props.name + ".png";
+});
+
+const secondPath = computed(() => {
+	return props.secondName ? "/cards" + props.secondName + ".png" : "";
+});
 
 const isFlipped = ref(false);
 

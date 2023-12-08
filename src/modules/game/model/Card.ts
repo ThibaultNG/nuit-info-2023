@@ -1,20 +1,21 @@
 export interface Choice {
 	answer: string;
-	description: string;
-	alert?: string;
+	addBundle?: string;
 	social: number;
-	economy: number;
 	ecology: number;
+	economy: number;
 }
 
 export interface Card {
 	id: number;
 	name: string;
+	event: string;
+	alert?: string;
 	flipName?: string;
 	left: Choice;
 	right: Choice;
 }
 
 export interface Bundle {
-	cards: Card[];
+	[key: string]: Card[];
 }

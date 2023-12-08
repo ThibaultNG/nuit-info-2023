@@ -1,4 +1,3 @@
-import { RouteItemInfo } from '../router/RouteInfo';
 <template>
 	<v-navigation-drawer :model-value="modelValue" temporary>
 		<v-list v-for="route in routes" :key="route.path">
