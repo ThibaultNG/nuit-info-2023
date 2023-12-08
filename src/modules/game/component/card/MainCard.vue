@@ -8,12 +8,10 @@
 			<ChoiceButton
 				class="mb-2"
 				:choice-text="card.left.answer"
-				:description="card.left.description"
 				@click="handleClick"
 			/>
 			<ChoiceButton
 				:choice-text="card.right.answer"
-				:description="card.right.description"
 				@click="handleClick"
 			/>
 		</v-container>
